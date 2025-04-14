@@ -1,0 +1,50 @@
+# Rate limiting configuration
+RATE_LIMIT=5/minute
+SAFE_SEARCH=moderate
+USE_NEWS_RSS=true
+
+# NLTK data path (optional)
+NLTK_DATA=./nltk_data
+
+# DuckDuckGo scraping configuration
+DUCKDUCKGO_URL=https://html.duckduckgo.com/html/
+USER_AGENT_ROTATION=true
+
+# RSS Feed Sources (all open/free)
+NEWS_RSS_URLS=
+  http://feeds.bbci.co.uk/news/rss.xml,
+  https://rss.nytimes.com/services/xml/rss/nyt/Business.xml,
+  https://www.theguardian.com/business/rss,
+  https://feeds.npr.org/1004/rss.xml,
+  https://www.economist.com/business/rss.xml
+
+# Open Financial Data Sources (no API keys needed)
+YAHOO_FINANCE_API=https://query1.finance.yahoo.com/v8/finance/chart/
+SEC_EDGAR_API=https://www.sec.gov/Archives/edgar/data/
+
+# Wikipedia API for company data (free/open)
+WIKIPEDIA_API=https://en.wikipedia.org/w/api.php
+
+# OpenCorporates API (free tier)
+OPEN_CORPORATES_API=https://api.opencorporates.com/v0.2/
+OPEN_CORPORATES_LIMIT=100  # Free tier limit
+
+# WorldBank Open Data API
+WORLDBANK_API=https://api.worldbank.org/v2/
+
+# Alternative Market Data Sources
+MARKETWATCH_URL=https://www.marketwatch.com
+BLOOMBERG_MARKETS_URL=https://www.bloomberg.com/markets
+YAHOO_FINANCE_URL=https://finance.yahoo.com
+
+# Cache configuration
+MARKET_DATA_CACHE_TTL=3600  # 1 hour cache
+REQUEST_TIMEOUT=20
+RETRY_ATTEMPTS=3
+RETRY_DELAY_BASE=2.0
+
+# Analysis limits
+MAX_SEARCH_RESULTS=5
+MAX_NEWS_RESULTS=3
+MAX_COMPETITORS=5
+DEFAULT_KEYWORDS=5
